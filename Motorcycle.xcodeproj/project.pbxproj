@@ -1,0 +1,925 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		34950643488F8554E4CF8B21 /* Pods_Motorcycle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8612BDB6E93E817FC0A38E67 /* Pods_Motorcycle.framework */; };
+		8733512C2AB0DC7D00130EAD /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8733512B2AB0DC7D00130EAD /* SummaryView.swift */; };
+		8733512E2AB0DC8C00130EAD /* SummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8733512D2AB0DC8C00130EAD /* SummaryViewModel.swift */; };
+		873351312AB0E00100130EAD /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 873351302AB0E00100130EAD /* SwiftUICharts */; };
+		873351332AB0F8B100130EAD /* SuccessOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873351322AB0F8B100130EAD /* SuccessOrderView.swift */; };
+		8789C7CD2AAA26AD008E3262 /* MotorcycleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789C7CC2AAA26AD008E3262 /* MotorcycleApp.swift */; };
+		8789C7D12AAA26B0008E3262 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8789C7D02AAA26B0008E3262 /* Assets.xcassets */; };
+		8789C7D42AAA26B0008E3262 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8789C7D32AAA26B0008E3262 /* Preview Assets.xcassets */; };
+		8789C7DB2AAA3662008E3262 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8789C7DA2AAA3661008E3262 /* GoogleService-Info.plist */; };
+		8789C7E32AAA3B97008E3262 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789C7E22AAA3B97008E3262 /* LoginViewModel.swift */; };
+		8789C7E52AAA4119008E3262 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789C7E42AAA4118008E3262 /* LoginView.swift */; };
+		8789C7E82AAA412A008E3262 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789C7E72AAA412A008E3262 /* RegisterView.swift */; };
+		8789C7EB2AAA4142008E3262 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789C7EA2AAA4142008E3262 /* RegisterViewModel.swift */; };
+		8789C7ED2AAA42BA008E3262 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789C7EC2AAA42BA008E3262 /* SessionManager.swift */; };
+		8789C7F02AAA42EA008E3262 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789C7EF2AAA42EA008E3262 /* HomeViewModel.swift */; };
+		8789C7F22AAA42F4008E3262 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789C7F12AAA42F3008E3262 /* HomeView.swift */; };
+		8789C7F52AAA4EC6008E3262 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789C7F42AAA4EC6008E3262 /* UserModel.swift */; };
+		8789C7F82AAA4EF2008E3262 /* AuthenticationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789C7F72AAA4EF2008E3262 /* AuthenticationRepository.swift */; };
+		8789C7FB2AAA4F3C008E3262 /* FirebaseAuthenticationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789C7FA2AAA4F3C008E3262 /* FirebaseAuthenticationRepository.swift */; };
+		8789C7FD2AAA5084008E3262 /* AuthenticationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789C7FC2AAA5084008E3262 /* AuthenticationError.swift */; };
+		8789C8002AAA55DF008E3262 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789C7FF2AAA55DF008E3262 /* UserRepository.swift */; };
+		8789C8022AAA5604008E3262 /* FirebaseUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789C8012AAA5604008E3262 /* FirebaseUserRepository.swift */; };
+		8789C8052AAB4AE2008E3262 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789C8042AAB4AE2008E3262 /* ProfileViewModel.swift */; };
+		8789C8072AAB4AEA008E3262 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789C8062AAB4AEA008E3262 /* ProfileView.swift */; };
+		8789C8092AAB4BA0008E3262 /* ProfilePhotoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789C8082AAB4BA0008E3262 /* ProfilePhotoRepository.swift */; };
+		8789C80B2AAB4C25008E3262 /* FirebaseProfilePhotoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789C80A2AAB4C25008E3262 /* FirebaseProfilePhotoRepository.swift */; };
+		8789C80E2AAB4F8C008E3262 /* Imagepicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789C80D2AAB4F8C008E3262 /* Imagepicker.swift */; };
+		8789C8102AAB51C6008E3262 /* UserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789C80F2AAB51C6008E3262 /* UserError.swift */; };
+		8789C8122AAB6F61008E3262 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789C8112AAB6F61008E3262 /* EditProfileView.swift */; };
+		8789C8142AABA381008E3262 /* MotorcycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789C8132AABA381008E3262 /* MotorcycleModel.swift */; };
+		8789C8162AABA8B9008E3262 /* MotorcycleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789C8152AABA8B9008E3262 /* MotorcycleRepository.swift */; };
+		8789C8182AABA8CC008E3262 /* FirebaseMotorcycleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789C8172AABA8CC008E3262 /* FirebaseMotorcycleRepository.swift */; };
+		8789C81A2AABA96D008E3262 /* ProfilePhotoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789C8192AABA96D008E3262 /* ProfilePhotoError.swift */; };
+		8789C8232AAC6F95008E3262 /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789C8222AAC6F95008E3262 /* OrderModel.swift */; };
+		8789C8252AAC6FDA008E3262 /* OrderStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789C8242AAC6FDA008E3262 /* OrderStatus.swift */; };
+		8789C8272AAC70A4008E3262 /* OrderReporitory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789C8262AAC70A4008E3262 /* OrderReporitory.swift */; };
+		8789C8292AAC710A008E3262 /* FirebaseOrderRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789C8282AAC710A008E3262 /* FirebaseOrderRepository.swift */; };
+		8789C82B2AAC724C008E3262 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789C82A2AAC724C008E3262 /* OrderView.swift */; };
+		8789C82E2AAC7260008E3262 /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789C82D2AAC7260008E3262 /* OrderViewModel.swift */; };
+		8789C8302AACEF88008E3262 /* OrderHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789C82F2AACEF88008E3262 /* OrderHistoryView.swift */; };
+		8789C8322AAE21D1008E3262 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789C8312AAE21D1008E3262 /* DetailView.swift */; };
+		8789C8352AAE5CA2008E3262 /* ModalView in Frameworks */ = {isa = PBXBuildFile; productRef = 8789C8342AAE5CA2008E3262 /* ModalView */; };
+		87AA505F2AB29C080049EFDE /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AA505E2AB29C080049EFDE /* NotificationService.swift */; };
+		87AA50632AB29C080049EFDE /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 87AA505C2AB29C080049EFDE /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		89D46AC1928D110E3E1CBCE5 /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA0717CF464868D734B63BCB /* Pods_OneSignalNotificationServiceExtension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		87AA50612AB29C080049EFDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8789C7C12AAA26AD008E3262 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87AA505B2AB29C080049EFDE;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		87AA50642AB29C080049EFDE /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				87AA50632AB29C080049EFDE /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		12ED83D4DDAF06623EF9BB81 /* Pods-Motorcycle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motorcycle.debug.xcconfig"; path = "Target Support Files/Pods-Motorcycle/Pods-Motorcycle.debug.xcconfig"; sourceTree = "<group>"; };
+		2F88AF2B2C7D0508C2FB3287 /* Pods-Motorcycle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motorcycle.release.xcconfig"; path = "Target Support Files/Pods-Motorcycle/Pods-Motorcycle.release.xcconfig"; sourceTree = "<group>"; };
+		3EDDD2AEC72A1D91D64D4D6D /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		8612BDB6E93E817FC0A38E67 /* Pods_Motorcycle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Motorcycle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8733512B2AB0DC7D00130EAD /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
+		8733512D2AB0DC8C00130EAD /* SummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewModel.swift; sourceTree = "<group>"; };
+		873351322AB0F8B100130EAD /* SuccessOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessOrderView.swift; sourceTree = "<group>"; };
+		8789C7C92AAA26AD008E3262 /* Motorcycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Motorcycle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8789C7CC2AAA26AD008E3262 /* MotorcycleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorcycleApp.swift; sourceTree = "<group>"; };
+		8789C7D02AAA26B0008E3262 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8789C7D32AAA26B0008E3262 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8789C7DA2AAA3661008E3262 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8789C7E22AAA3B97008E3262 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		8789C7E42AAA4118008E3262 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		8789C7E72AAA412A008E3262 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		8789C7EA2AAA4142008E3262 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		8789C7EC2AAA42BA008E3262 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		8789C7EF2AAA42EA008E3262 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		8789C7F12AAA42F3008E3262 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8789C7F42AAA4EC6008E3262 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		8789C7F72AAA4EF2008E3262 /* AuthenticationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepository.swift; sourceTree = "<group>"; };
+		8789C7FA2AAA4F3C008E3262 /* FirebaseAuthenticationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthenticationRepository.swift; sourceTree = "<group>"; };
+		8789C7FC2AAA5084008E3262 /* AuthenticationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationError.swift; sourceTree = "<group>"; };
+		8789C7FF2AAA55DF008E3262 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		8789C8012AAA5604008E3262 /* FirebaseUserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUserRepository.swift; sourceTree = "<group>"; };
+		8789C8042AAB4AE2008E3262 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		8789C8062AAB4AEA008E3262 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		8789C8082AAB4BA0008E3262 /* ProfilePhotoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoRepository.swift; sourceTree = "<group>"; };
+		8789C80A2AAB4C25008E3262 /* FirebaseProfilePhotoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseProfilePhotoRepository.swift; sourceTree = "<group>"; };
+		8789C80D2AAB4F8C008E3262 /* Imagepicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Imagepicker.swift; sourceTree = "<group>"; };
+		8789C80F2AAB51C6008E3262 /* UserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserError.swift; sourceTree = "<group>"; };
+		8789C8112AAB6F61008E3262 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		8789C8132AABA381008E3262 /* MotorcycleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorcycleModel.swift; sourceTree = "<group>"; };
+		8789C8152AABA8B9008E3262 /* MotorcycleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorcycleRepository.swift; sourceTree = "<group>"; };
+		8789C8172AABA8CC008E3262 /* FirebaseMotorcycleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseMotorcycleRepository.swift; sourceTree = "<group>"; };
+		8789C8192AABA96D008E3262 /* ProfilePhotoError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoError.swift; sourceTree = "<group>"; };
+		8789C8212AAC6B20008E3262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8789C8222AAC6F95008E3262 /* OrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
+		8789C8242AAC6FDA008E3262 /* OrderStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStatus.swift; sourceTree = "<group>"; };
+		8789C8262AAC70A4008E3262 /* OrderReporitory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderReporitory.swift; sourceTree = "<group>"; };
+		8789C8282AAC710A008E3262 /* FirebaseOrderRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseOrderRepository.swift; sourceTree = "<group>"; };
+		8789C82A2AAC724C008E3262 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		8789C82D2AAC7260008E3262 /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
+		8789C82F2AACEF88008E3262 /* OrderHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryView.swift; sourceTree = "<group>"; };
+		8789C8312AAE21D1008E3262 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		87AA505C2AB29C080049EFDE /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		87AA505E2AB29C080049EFDE /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		87AA50602AB29C080049EFDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87AA50682AB2A34D0049EFDE /* Motorcycle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Motorcycle.entitlements; sourceTree = "<group>"; };
+		BA0717CF464868D734B63BCB /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D56848B099095FDB3E6E0F5E /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8789C7C62AAA26AD008E3262 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				873351312AB0E00100130EAD /* SwiftUICharts in Frameworks */,
+				34950643488F8554E4CF8B21 /* Pods_Motorcycle.framework in Frameworks */,
+				8789C8352AAE5CA2008E3262 /* ModalView in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87AA50592AB29C080049EFDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89D46AC1928D110E3E1CBCE5 /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8733512A2AB0DBF800130EAD /* Summary */ = {
+			isa = PBXGroup;
+			children = (
+				8733512B2AB0DC7D00130EAD /* SummaryView.swift */,
+				8733512D2AB0DC8C00130EAD /* SummaryViewModel.swift */,
+			);
+			path = Summary;
+			sourceTree = "<group>";
+		};
+		8789C7C02AAA26AD008E3262 = {
+			isa = PBXGroup;
+			children = (
+				8789C7CB2AAA26AD008E3262 /* Motorcycle */,
+				87AA505D2AB29C080049EFDE /* OneSignalNotificationServiceExtension */,
+				8789C7CA2AAA26AD008E3262 /* Products */,
+				FFA34E409F9C5859A7D4959E /* Pods */,
+				FBC85352FD661608A9DD15A0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8789C7CA2AAA26AD008E3262 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8789C7C92AAA26AD008E3262 /* Motorcycle.app */,
+				87AA505C2AB29C080049EFDE /* OneSignalNotificationServiceExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8789C7CB2AAA26AD008E3262 /* Motorcycle */ = {
+			isa = PBXGroup;
+			children = (
+				87AA50682AB2A34D0049EFDE /* Motorcycle.entitlements */,
+				8789C8212AAC6B20008E3262 /* Info.plist */,
+				8789C7DA2AAA3661008E3262 /* GoogleService-Info.plist */,
+				8789C7D02AAA26B0008E3262 /* Assets.xcassets */,
+				8789C7FE2AAA50E7008E3262 /* Enums */,
+				8789C7E02AAA3AB8008E3262 /* Common */,
+				8789C7DE2AAA3AA6008E3262 /* Data */,
+				8789C7DD2AAA3AA0008E3262 /* Domain */,
+				8789C7DF2AAA3AAB008E3262 /* UI */,
+				8789C7D22AAA26B0008E3262 /* Preview Content */,
+			);
+			path = Motorcycle;
+			sourceTree = "<group>";
+		};
+		8789C7D22AAA26B0008E3262 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8789C7D32AAA26B0008E3262 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8789C7DD2AAA3AA0008E3262 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				8789C7F62AAA4EE0008E3262 /* Entities */,
+				8789C7F32AAA4EBB008E3262 /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		8789C7DE2AAA3AA6008E3262 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8789C7F92AAA4F24008E3262 /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		8789C7DF2AAA3AAB008E3262 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8733512A2AB0DBF800130EAD /* Summary */,
+				8789C82C2AAC7250008E3262 /* Order */,
+				8789C80C2AAB4F81008E3262 /* Components */,
+				8789C8032AAB4AC9008E3262 /* Profile */,
+				8789C7EE2AAA42E0008E3262 /* Home */,
+				8789C7E62AAA411D008E3262 /* Register */,
+				8789C7E12AAA3B7A008E3262 /* Login */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8789C7E02AAA3AB8008E3262 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8789C7CC2AAA26AD008E3262 /* MotorcycleApp.swift */,
+				8789C7EC2AAA42BA008E3262 /* SessionManager.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		8789C7E12AAA3B7A008E3262 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8789C7E22AAA3B97008E3262 /* LoginViewModel.swift */,
+				8789C7E42AAA4118008E3262 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		8789C7E62AAA411D008E3262 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				8789C7E72AAA412A008E3262 /* RegisterView.swift */,
+				8789C7EA2AAA4142008E3262 /* RegisterViewModel.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		8789C7EE2AAA42E0008E3262 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8789C7EF2AAA42EA008E3262 /* HomeViewModel.swift */,
+				8789C7F12AAA42F3008E3262 /* HomeView.swift */,
+				8789C8312AAE21D1008E3262 /* DetailView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8789C7F32AAA4EBB008E3262 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8789C7F42AAA4EC6008E3262 /* UserModel.swift */,
+				8789C8132AABA381008E3262 /* MotorcycleModel.swift */,
+				8789C8222AAC6F95008E3262 /* OrderModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8789C7F62AAA4EE0008E3262 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				8789C7F72AAA4EF2008E3262 /* AuthenticationRepository.swift */,
+				8789C7FF2AAA55DF008E3262 /* UserRepository.swift */,
+				8789C8082AAB4BA0008E3262 /* ProfilePhotoRepository.swift */,
+				8789C8152AABA8B9008E3262 /* MotorcycleRepository.swift */,
+				8789C8262AAC70A4008E3262 /* OrderReporitory.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		8789C7F92AAA4F24008E3262 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				8789C7FA2AAA4F3C008E3262 /* FirebaseAuthenticationRepository.swift */,
+				8789C8012AAA5604008E3262 /* FirebaseUserRepository.swift */,
+				8789C80A2AAB4C25008E3262 /* FirebaseProfilePhotoRepository.swift */,
+				8789C8172AABA8CC008E3262 /* FirebaseMotorcycleRepository.swift */,
+				8789C8282AAC710A008E3262 /* FirebaseOrderRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		8789C7FE2AAA50E7008E3262 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				8789C7FC2AAA5084008E3262 /* AuthenticationError.swift */,
+				8789C80F2AAB51C6008E3262 /* UserError.swift */,
+				8789C8192AABA96D008E3262 /* ProfilePhotoError.swift */,
+				8789C8242AAC6FDA008E3262 /* OrderStatus.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		8789C8032AAB4AC9008E3262 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				8789C8042AAB4AE2008E3262 /* ProfileViewModel.swift */,
+				8789C8062AAB4AEA008E3262 /* ProfileView.swift */,
+				8789C8112AAB6F61008E3262 /* EditProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		8789C80C2AAB4F81008E3262 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8789C80D2AAB4F8C008E3262 /* Imagepicker.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		8789C82C2AAC7250008E3262 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				8789C82A2AAC724C008E3262 /* OrderView.swift */,
+				8789C82D2AAC7260008E3262 /* OrderViewModel.swift */,
+				8789C82F2AACEF88008E3262 /* OrderHistoryView.swift */,
+				873351322AB0F8B100130EAD /* SuccessOrderView.swift */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		87AA505D2AB29C080049EFDE /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				87AA505E2AB29C080049EFDE /* NotificationService.swift */,
+				87AA50602AB29C080049EFDE /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		FBC85352FD661608A9DD15A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8612BDB6E93E817FC0A38E67 /* Pods_Motorcycle.framework */,
+				BA0717CF464868D734B63BCB /* Pods_OneSignalNotificationServiceExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFA34E409F9C5859A7D4959E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12ED83D4DDAF06623EF9BB81 /* Pods-Motorcycle.debug.xcconfig */,
+				2F88AF2B2C7D0508C2FB3287 /* Pods-Motorcycle.release.xcconfig */,
+				3EDDD2AEC72A1D91D64D4D6D /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				D56848B099095FDB3E6E0F5E /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8789C7C82AAA26AD008E3262 /* Motorcycle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8789C7D72AAA26B0008E3262 /* Build configuration list for PBXNativeTarget "Motorcycle" */;
+			buildPhases = (
+				B780907BB8A711600BE67EEF /* [CP] Check Pods Manifest.lock */,
+				8789C7C52AAA26AD008E3262 /* Sources */,
+				8789C7C62AAA26AD008E3262 /* Frameworks */,
+				8789C7C72AAA26AD008E3262 /* Resources */,
+				352BA158962FA23B130CB597 /* [CP] Embed Pods Frameworks */,
+				87AA50642AB29C080049EFDE /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87AA50622AB29C080049EFDE /* PBXTargetDependency */,
+			);
+			name = Motorcycle;
+			packageProductDependencies = (
+				8789C8342AAE5CA2008E3262 /* ModalView */,
+				873351302AB0E00100130EAD /* SwiftUICharts */,
+			);
+			productName = Motorcycle;
+			productReference = 8789C7C92AAA26AD008E3262 /* Motorcycle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		87AA505B2AB29C080049EFDE /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87AA50672AB29C080049EFDE /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				19CF8DAFFC60DB718911318F /* [CP] Check Pods Manifest.lock */,
+				87AA50582AB29C080049EFDE /* Sources */,
+				87AA50592AB29C080049EFDE /* Frameworks */,
+				87AA505A2AB29C080049EFDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 87AA505C2AB29C080049EFDE /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8789C7C12AAA26AD008E3262 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				ORGANIZATIONNAME = "Azzam Ubaidillah";
+				TargetAttributes = {
+					8789C7C82AAA26AD008E3262 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					87AA505B2AB29C080049EFDE = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 8789C7C42AAA26AD008E3262 /* Build configuration list for PBXProject "Motorcycle" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8789C7C02AAA26AD008E3262;
+			packageReferences = (
+				8789C8332AAE5CA2008E3262 /* XCRemoteSwiftPackageReference "modal-view" */,
+				8733512F2AB0E00100130EAD /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
+			productRefGroup = 8789C7CA2AAA26AD008E3262 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8789C7C82AAA26AD008E3262 /* Motorcycle */,
+				87AA505B2AB29C080049EFDE /* OneSignalNotificationServiceExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8789C7C72AAA26AD008E3262 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8789C7D42AAA26B0008E3262 /* Preview Assets.xcassets in Resources */,
+				8789C7D12AAA26B0008E3262 /* Assets.xcassets in Resources */,
+				8789C7DB2AAA3662008E3262 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87AA505A2AB29C080049EFDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19CF8DAFFC60DB718911318F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneSignalNotificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		352BA158962FA23B130CB597 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Motorcycle/Pods-Motorcycle-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Motorcycle/Pods-Motorcycle-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Motorcycle/Pods-Motorcycle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B780907BB8A711600BE67EEF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Motorcycle-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8789C7C52AAA26AD008E3262 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8789C8122AAB6F61008E3262 /* EditProfileView.swift in Sources */,
+				873351332AB0F8B100130EAD /* SuccessOrderView.swift in Sources */,
+				8789C82E2AAC7260008E3262 /* OrderViewModel.swift in Sources */,
+				8789C8232AAC6F95008E3262 /* OrderModel.swift in Sources */,
+				8789C8002AAA55DF008E3262 /* UserRepository.swift in Sources */,
+				8789C7E82AAA412A008E3262 /* RegisterView.swift in Sources */,
+				8789C7CD2AAA26AD008E3262 /* MotorcycleApp.swift in Sources */,
+				8789C8102AAB51C6008E3262 /* UserError.swift in Sources */,
+				8789C80B2AAB4C25008E3262 /* FirebaseProfilePhotoRepository.swift in Sources */,
+				8789C7F02AAA42EA008E3262 /* HomeViewModel.swift in Sources */,
+				8789C7F82AAA4EF2008E3262 /* AuthenticationRepository.swift in Sources */,
+				8789C8022AAA5604008E3262 /* FirebaseUserRepository.swift in Sources */,
+				8733512E2AB0DC8C00130EAD /* SummaryViewModel.swift in Sources */,
+				8733512C2AB0DC7D00130EAD /* SummaryView.swift in Sources */,
+				8789C7ED2AAA42BA008E3262 /* SessionManager.swift in Sources */,
+				8789C8252AAC6FDA008E3262 /* OrderStatus.swift in Sources */,
+				8789C7EB2AAA4142008E3262 /* RegisterViewModel.swift in Sources */,
+				8789C8072AAB4AEA008E3262 /* ProfileView.swift in Sources */,
+				8789C7F22AAA42F4008E3262 /* HomeView.swift in Sources */,
+				8789C8052AAB4AE2008E3262 /* ProfileViewModel.swift in Sources */,
+				8789C8142AABA381008E3262 /* MotorcycleModel.swift in Sources */,
+				8789C8322AAE21D1008E3262 /* DetailView.swift in Sources */,
+				8789C81A2AABA96D008E3262 /* ProfilePhotoError.swift in Sources */,
+				8789C7E52AAA4119008E3262 /* LoginView.swift in Sources */,
+				8789C8092AAB4BA0008E3262 /* ProfilePhotoRepository.swift in Sources */,
+				8789C7FB2AAA4F3C008E3262 /* FirebaseAuthenticationRepository.swift in Sources */,
+				8789C7F52AAA4EC6008E3262 /* UserModel.swift in Sources */,
+				8789C8182AABA8CC008E3262 /* FirebaseMotorcycleRepository.swift in Sources */,
+				8789C8302AACEF88008E3262 /* OrderHistoryView.swift in Sources */,
+				8789C8162AABA8B9008E3262 /* MotorcycleRepository.swift in Sources */,
+				8789C7FD2AAA5084008E3262 /* AuthenticationError.swift in Sources */,
+				8789C8272AAC70A4008E3262 /* OrderReporitory.swift in Sources */,
+				8789C8292AAC710A008E3262 /* FirebaseOrderRepository.swift in Sources */,
+				8789C7E32AAA3B97008E3262 /* LoginViewModel.swift in Sources */,
+				8789C80E2AAB4F8C008E3262 /* Imagepicker.swift in Sources */,
+				8789C82B2AAC724C008E3262 /* OrderView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87AA50582AB29C080049EFDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87AA505F2AB29C080049EFDE /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		87AA50622AB29C080049EFDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87AA505B2AB29C080049EFDE /* OneSignalNotificationServiceExtension */;
+			targetProxy = 87AA50612AB29C080049EFDE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8789C7D52AAA26B0008E3262 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8789C7D62AAA26B0008E3262 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8789C7D82AAA26B0008E3262 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12ED83D4DDAF06623EF9BB81 /* Pods-Motorcycle.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Motorcycle/Motorcycle.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Motorcycle/Preview Content\"";
+				DEVELOPMENT_TEAM = 6X6Q46SLSA;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Motorcycle/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = azzam.Motorcycle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8789C7D92AAA26B0008E3262 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F88AF2B2C7D0508C2FB3287 /* Pods-Motorcycle.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Motorcycle/Motorcycle.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Motorcycle/Preview Content\"";
+				DEVELOPMENT_TEAM = 6X6Q46SLSA;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Motorcycle/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = azzam.Motorcycle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		87AA50652AB29C080049EFDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EDDD2AEC72A1D91D64D4D6D /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6X6Q46SLSA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Azzam Ubaidillah. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = azzam.Motorcycle.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		87AA50662AB29C080049EFDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D56848B099095FDB3E6E0F5E /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6X6Q46SLSA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Azzam Ubaidillah. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = azzam.Motorcycle.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8789C7C42AAA26AD008E3262 /* Build configuration list for PBXProject "Motorcycle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8789C7D52AAA26B0008E3262 /* Debug */,
+				8789C7D62AAA26B0008E3262 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8789C7D72AAA26B0008E3262 /* Build configuration list for PBXNativeTarget "Motorcycle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8789C7D82AAA26B0008E3262 /* Debug */,
+				8789C7D92AAA26B0008E3262 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87AA50672AB29C080049EFDE /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87AA50652AB29C080049EFDE /* Debug */,
+				87AA50662AB29C080049EFDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8733512F2AB0E00100130EAD /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.5;
+			};
+		};
+		8789C8332AAE5CA2008E3262 /* XCRemoteSwiftPackageReference "modal-view" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/diniska/modal-view";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		873351302AB0E00100130EAD /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8733512F2AB0E00100130EAD /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+		8789C8342AAE5CA2008E3262 /* ModalView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8789C8332AAE5CA2008E3262 /* XCRemoteSwiftPackageReference "modal-view" */;
+			productName = ModalView;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8789C7C12AAA26AD008E3262 /* Project object */;
+}
